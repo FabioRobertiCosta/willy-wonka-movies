@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Fantástica Fábrica de Chocolates</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            background-color: #f0f8ff;
+            color: #333;
+        }
+
+        header {
+            text-align: center;
+            background-color: #4682b4;
+            color: white;
+            padding: 1rem;
+        }
+
+        header img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-bottom: 5px solid #5f9ea0;
+        }
+
+        nav {
+        background-color: #5f9ea0;
+        color: white;
+        padding: 1rem;
+        display: flex;
+        justify-content: center; /* Centraliza os itens horizontalmente */
+    }
+    nav ul {
+        list-style: none;
+        display: flex; /* Exibe os itens lado a lado */
+        gap: 1.5rem; /* Espaçamento entre os itens */
+        padding: 0;
+        margin: 0;
+    }
+        nav ul li {
+            margin: 0.5rem 0;
+        }
+
+        nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    nav ul li a:hover {
+        text-decoration: underline;
+    }
+
+        main {
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            gap: 1rem;
+            margin: 10px;
+        }
+
+        .sidebar, .anchors {
+            background-color: #e6f2ff;
+            padding: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .content {
+            padding: 1rem;
+            border-left: 2px solid #4682b4;
+            border-right: 2px solid #4682b4;
+        }
+
+        img {
+            margin: 10px;
+            max-width: 30%;
+            border-radius: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #4682b4;
+            color: white;
+        }
+
+        .back-button {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 0.5rem 1rem;
+            background-color: #8b4513;
+            color: white;
+            text-decoration: none;
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .back-button:hover {
+            background-color: #a0522d;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="src/imagens/factory.jpeg" alt="Logotipo da página">
+        <h1>A Fantástica Fábrica de Chocolates</h1>
+    </header>
+
+    <nav>
+    <ul>
+        <li><a href="#sobre">Sobre os Filmes</a></li>
+        <li><a href="#elenco">Elenco</a></li>
+        <li><a href="#curiosidades">Curiosidades</a></li>
+    </ul>
+</nav>
+
+    <main>
+        <aside class="sidebar">
+            <h2>Navegação</h2>
+            <ul>
+                <li><a href="#sobre">Sobre os Filmes</a></li>
+                <li><a href="#elenco">Elenco</a></li>
+                <li><a href="#curiosidades">Curiosidades</a></li>
+            </ul>
+        </aside>
+
+        <section class="content">
+            <article id="sobre">
+                <h2>Sobre os Filmes</h2>
+                <img src="src/imagens/charlie.jpeg" alt="Cena do filme original A Fantástica Fábrica de Chocolates">
+                <p>
+                    "A Fantástica Fábrica de Chocolates" é uma história icônica baseada no livro de Roald Dahl. A primeira adaptação, lançada em 1971, conta a jornada de Charlie Bucket, um garoto humilde que ganha a oportunidade de visitar a mágica fábrica de Willy Wonka. Em 2005, uma nova versão dirigida por Tim Burton trouxe Johnny Depp como Willy Wonka, explorando uma visão mais excêntrica do personagem.
+                </p>
+                <a class="back-button" href="#top">Voltar</a>
+            </article>
+
+            <article id="elenco">
+                <h2>Elenco</h2>
+                <img src="src/imagens/logo.jpeg" alt="Elenco do filme de 1971" style="float: right;">
+                <p>
+                    O filme original de 1971 trouxe Gene Wilder no papel de Willy Wonka, uma interpretação inesquecível. No remake de 2005, Johnny Depp trouxe uma abordagem única ao personagem. Ambos os filmes apresentaram elencos talentosos, incluindo jovens atores que se destacaram como os sortudos vencedores dos bilhetes dourados.
+                </p>
+                <a class="back-button" href="#top">Voltar</a>
+            </article>
+
+            <article id="curiosidades">
+                <h2>Curiosidades</h2>
+                <img src="src/imagens/wonka.jpeg" alt="Imagem de bastidores" style="float: left;">
+                <p>
+                    Algumas curiosidades incluem a criação real das guloseimas no filme original e a obsessão de Tim Burton em recriar a magia do universo de Dahl. O novo filme "Wonka", estrelado por Timothée Chalamet, promete explorar a origem do excêntrico fabricante de chocolates. Com direção de Paul King, o longa promete misturar fantasia com a narrativa envolvente.
+                </p>
+                <a class="back-button" href="#top">Voltar</a>
+            </article>
+        </section>
+
+        <aside class="anchors">
+            <h2>Neste Artigo</h2>
+            <ul>
+                <li><a href="#sobre">Sobre os Filmes</a></li>
+                <li><a href="#elenco">Elenco</a></li>
+                <li><a href="#curiosidades">Curiosidades</a></li>
+            </ul>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 A Fantástica Fábrica de Chocolates - Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
